@@ -1,0 +1,118 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--black);
+    background-color: white;
+}
+
+.title__wrapper {
+    padding: 0.34rem 2rem;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: center;
+    border-right: 3px solid var(--black);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.link__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    padding: 1rem 0;
+}
+
+.nav__list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--black);
+    padding: 1.25rem 1rem;
+}
+
+.nav__link:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.last__link {
+    border-right: 3px solid var(--black);
+}
+
+.logo__wrapper {
+    padding: 0.9rem 1rem;
+    background-color: var(--purple);
+}
+
+.logo__wrapper:hover {
+    cursor: pointer;
+}
+
+.logo__wrapper:hover #thehub {
+    transition-duration: 0.5s;
+    scale: 1.2;
+}
+
+.logo__wrapper:not(:hover) #thehub {
+    transition-duration: 0.5s;
+    scale: 1;
+}
+
+.contact__container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.contact__container:hover {
+    cursor: pointer;
+}
+
+.contact__container > img {
+    filter: invert(100%) sepia(3%) saturate(0%) hue-rotate(44deg) brightness(110%) contrast(100%);
+}
+
+.contact__message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    padding: 1rem 3.5rem 2rem 3.5rem;
+    border: 3px solid var(--black);
+    box-shadow: 3px 3px var(--black);
+    font-size: 1.1rem;
+}
+
+.last__line {
+    margin-bottom: 1rem;
+}
+
+.contact__message #close-btn {
+    align-self: flex-end;
+    padding: 0.5rem 0.7rem;
+    border-radius: 50%;
+    background-color: var(--green);
+    border: 2px solid var(--black);
+    box-shadow: 1px 2px var(--black);
+    margin-bottom: 2rem;
+}
+
+.closed {
+    display: none;
+}
