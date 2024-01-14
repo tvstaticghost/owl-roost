@@ -8,9 +8,9 @@
     --black: black;
     --white: whitesmoke;
 
-    --purple: #C4A1FF;
-    --dark-purple: #9723C9;
-    --green: #BAFCA2;
+    --purple: #B0BCE9;
+    --dark-purple: #564787;
+    --green: #B2FFD6;
     --light-green: #7FBC8C;
 
     --normal-font: 'Archivo', sans-serif;
@@ -18,6 +18,8 @@
 
 body {
     font-family: var(--normal-font);
+    background: rgb(239,201,194);
+    background: linear-gradient(90deg, rgba(239,201,194,1) 0%, rgba(239,224,194,1) 84%);
 }
 
 textarea {
@@ -28,9 +30,10 @@ textarea {
 
 button {
     padding: 0.5rem 2rem;
-    background-color: var(--green);
     border: 2px solid var(--black);
     box-shadow: 2px 2px var(--black);
+    color: var(--black);
+    background-color: var(--green);
     font-weight: 700;
     font-size: 1rem;
     align-self: center;

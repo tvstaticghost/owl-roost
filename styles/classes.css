@@ -6,7 +6,7 @@
     margin: 2rem auto;
     font-weight: 900;
     font-size: larger;
-    background-color: white;
+    color: var(--black);
 }
 
 .main__line {
@@ -29,6 +29,7 @@
     padding: 2rem;
     margin-bottom: 3rem;
     font-weight: 700;
+    background-color: var(--white);
 }
 
 .class__name {
@@ -48,6 +49,7 @@
     display: grid;
     grid-template-columns: 40% 20% 20% 15%;
     align-items: flex-end;
+    background-color: var(--white);
 }
 
 .class button {
@@ -64,11 +66,11 @@
     display: none;
     border: 2px solid var(--black);
     box-shadow: 3px 3px var(--black);
-    background-color: var(--purple);
+    background-color: var(--green);
     padding: 0.3rem;
     position: fixed;
     bottom: 3rem;
-    right: 2rem;
+    right: 6%;
 }
 
 /* media queries */
@@ -80,16 +82,22 @@
     
     .class {
         font-size: 15px;
+        grid-template-columns: 45% 17.5% 17.5% 20%;
     }
 }
 
 @media (max-width: 1015px) {
     .class__header {
         grid-template-columns: 44.5% 17.5% 35%;
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .class {
-        grid-template-columns: 45% 17.5% 17.5% 15%;
+        grid-template-columns: 45% 17.5% 17.5% 22%;
+        font-size: 13px;
+    }
+
+    .up__arrow {
+        right: 5%
     }
 }
